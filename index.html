@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generation</title>
+</head>
+<body>
+    <h1>OTP Generation</h1>
+    <p id="demo"></p>
+    <script>
+        var button = document.createElement("button");
+        button.innerText = "Click To Generate OTP";
+        button.style.color="blue"
+        button.style.margin="auto"
+        button.style.padding="10px"
+        button.style.backgroundColor="black"
+        button.style.color="white"
+        document.body.appendChild(button);
+        document.body.style.backgroundColor="lightblue"
+        
+
+        button.addEventListener('click', function() {
+            var count = "";
+            for (var i = 0; i < 6; i++) {
+                var otp = Math.floor(Math.random() * 10);
+                count = count + otp;
+            }
+            document.getElementById("demo").innerHTML = count;
+        });
+    </script>
+</body>
+</html>
