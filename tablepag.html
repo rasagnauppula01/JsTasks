@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var data2 = JSON.parse(window.localStorage.getItem("data1"));
+      console.log(data2);
+
+      var tab = document.createElement("table");
+      tab.style.border = "1px solid black";
+      tab.style.borderCollapse = "collapse";
+      tab.style.margin = "auto";
+      document.body.appendChild(tab);
+      console.log(data2[0].username);
+      console.log(data2[0].password);
+
+      tabh = document.createElement("th");
+      tabh.innerText = "USERNAME";
+      tab.appendChild(tabh);
+      tabh.style.border = "1px solid black";
+      tabh.style.padding = "40px";
+
+      tabh1 = document.createElement("th");
+      tabh1.innerText = "PASSWORD";
+      tab.appendChild(tabh1);
+      tabh1.style.border = "1px solid black";
+      tabh1.style.padding = "40px";
+
+      for (i = 0; i < data2.length; i++) {
+        var tabrow1 = document.createElement("tr");
+        tabrow1.style.border = "1px solid black";
+        tabrow1.style.padding = "40px";
+
+        var tabhead = document.createElement("td");
+        tabhead.innerText = data2[i].username;
+        tabhead.style.border = "1px solid black";
+        tabhead.style.padding = "40px";
+
+        var tabhead1 = document.createElement("td");
+        tabhead1.innerText = data2[i].password;
+        tabhead1.style.border = "1px solid black";
+        tabhead1.style.padding = "40px";
+
+        tabrow1.appendChild(tabhead);
+        tabrow1.appendChild(tabhead1);
+
+        console.log(tabrow1);
+        tab.appendChild(tabrow1);
+      }
+    </script>
+  </body>
+</html>
