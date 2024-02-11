@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+    
+
+    <script>
+
+    var main=document.createElement("img")
+        main.setAttribute("src","./images/glob.jpg")
+        main.style.height="190px"
+        main.style.display="flex"
+        main.style.margin="auto"
+        document.body.style.backgroundColor="black"
+        document.body.appendChild(main)
+        document.body.style.margin="flex"
+        document.body.style.marginTop="90PX"
+
+
+
+       
+        var div1=document.createElement("div")
+        document.body.appendChild(div1)
+        div1.style.border="1px solid black"
+        div1.style.height="150px"
+        div1.style.width="45%"
+        div1.style.margin="5px"
+        div1.style.padding="30px"
+        div1.style.display="flex"
+        div1.style.margin="auto"
+        div1.style.marginTop="120px"
+        div1.style.backgroundColor="white"
+
+
+        
+
+
+        var img1=document.createElement("img")
+        img1.setAttribute("src","./images/image1.jpg")
+        img1.style.height="90px"
+        img1.style.margin="auto"
+        div1.appendChild(img1)
+
+
+        var img2=document.createElement("img")
+        img2.setAttribute("src","./images/image2.webp")
+        img2.style.height="90px"
+        img2.style.margin="auto"
+        div1.appendChild(img2)
+
+
+
+
+        var img3=document.createElement("img")
+        img3.setAttribute("src","./images/image4.jpg")
+        img3.style.height="90px"
+        img3.style.width="99px"
+        img3.style.margin="auto"
+        div1.appendChild(img3)
+
+
+        var img4=document.createElement("img")
+        img4.setAttribute("src","./images/image6.webp")
+        img4.style.height="90px"
+        img4.style.margin="auto"
+        div1.appendChild(img4)
+
+
+        var img5=document.createElement("img")
+        img5.setAttribute("src","./images/image10.jpg")
+        img5.style.height="90px"
+        img5.style.margin="auto"
+        div1.appendChild(img5)
+
+
+
+        img1.addEventListener('click',function(){
+           main.src=img1.src
+        }
+        )
+
+        img2.addEventListener('click',function(){
+           main.src=img2.src
+        }
+        )
+
+        img3.addEventListener('click',function(){
+           main.src=img3.src
+        }
+        )
+
+        img4.addEventListener('click',function(){
+           main.src=img4.src
+        }
+        )
+
+        img5.addEventListener('click',function(){
+           main.src=img5.src
+        }
+        )
+        
+
+    </script>
+</body>
+</html>

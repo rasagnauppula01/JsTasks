@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="rotate1" src="./images/Ashoka_Chakra.svg.png" alt="imgs"  width="190px" height="190px">
+    <button id="rotateButton">Rotate 360deg</button>
+    <button id="reset">Reset</button>
+
+    <script>
+        var rotate=document.getElementById("rotate1");
+        rotate.style.display= "flex"
+        rotate.style.margin="auto"
+        rotate.style.padding="30px"
+        document.body.style.backgroundColor="lightblue"
+
+
+        var button=document.getElementById("rotateButton");
+        button.style.color="white"
+        button.style.display= "flex"
+        button.style.margin="auto"
+        button.style.padding="10px"
+        button.style.backgroundColor="orange"
+
+
+        var reset_btn=document.getElementById("reset")
+        reset_btn.style.color="white"
+        reset_btn.style.display= "flex"
+        reset_btn.style.margin="auto"
+        reset_btn.style.marginTop="20px"
+        reset_btn.style.padding="10px"
+        reset_btn.style.backgroundColor="green"
+
+
+        
+        var rotation=0;
+        button.addEventListener("click", ()=> {
+            rotate.style.transform="rotate(360deg)"
+            rotate.style.transitionDuration="2s"
+      });
+
+       reset_btn.addEventListener("click", ()=>{
+        rotate.style.transform="rotate(0deg)"
+       });
+
+    </script>
+</body>
+</html>
