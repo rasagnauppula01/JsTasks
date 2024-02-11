@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myBtn">Login form</button>
+    
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click", function() {
+        var st=prompt("USER_NAME");
+        let getEl=window.localStorage.getItem("username");
+
+
+        var a=confirm("do you want to route");
+            if(st==getEl){
+               window.location.assign("./cardSEEMOREtask.html")
+               console.log("hello");
+            }
+            else{
+                alert("wrong user name")
+                }
+        });
+
+
+
+
+
+
+
+
+        // let a=confirm("do you want to route");
+        //     if(a){
+        //         window.location.assign("./registor.html")
+        //     }
+        //     else{
+        //         alert("hi thanks for selecting")
+            // }
+        
+    </script>
+</body>
+</html>

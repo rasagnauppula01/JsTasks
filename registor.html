@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <button id="myBtn">Registor form</button>
+
+    <h1><button>Login</button></h1>
+
+<script>
+      document.getElementById("myBtn").addEventListener("click", function() {
+      let a=prompt("USER_NAME");
+        // localstorage
+             window.localStorage.setItem("username",a);
+        });
+
+
+
+        // login route
+        var lg=document.getElementsByTagName("h1")
+        lg[0].addEventListener("click",()=>{
+          window.open("./login.html")
+        })
+
+</script>
+</body>
+</html>
